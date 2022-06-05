@@ -1,0 +1,128 @@
+<style></style>
+<div class="container-fluid page">
+  <div class="d-flex page__box ">Orders</div>
+  </div>
+  <!-- <div class="page__content  position-relative"> -->
+
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <!-- <div class="card-header">
+          <h3 class="card-title"></h3>
+
+          <div class="card-tools">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+          </div>
+        </div> -->
+        
+        <!-- /.card-header -->
+        <div class="card-body table-responsive p-0">
+          <table class="table table-hover text-nowrap">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Product Name</th>
+                <th>Pricing</th>
+                <th>Status</th>
+                <!-- <th>View</th>
+                <th>Edit</th>
+                <th>Delete</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Biryani</td>
+                <td>750.0</td>
+                <td><span class="tag tag-success">Available</span></td>
+                <!-- <td><button class="btn btn-sm btn-info">
+                  <i id="myicon1"class="fa fa-search"></i></button>
+              </td>
+                <td>
+                  <button class="btn btn-sm btn-warning">
+                    <i id="myicon2"class="fa fa-edit"></i></button>
+                    </td>
+                    <td>
+                      <button class="btn btn-sm btn-danger">
+                          <i id="myicon3" class="fa fa-remove"></i></button>
+                    </td> -->
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Grilled Potatoes</td>
+                <td>300.0</td>
+                <td><span class="tag tag-warning">Available</span></td>
+                <!-- <td>
+                  <button class="btn btn-sm btn-info">
+                    <i id="myicon1"class="fa fa-search"></i></button> -->
+                    <!-- </td>
+                    <td> <button class="btn btn-sm btn-warning">
+                      <i id="myicon2"class="fa fa-edit"></i></button></td>
+                    <td><button class="btn btn-sm btn-danger">
+                      <i id="myicon3" class="fa fa-remove"></i></button>
+                  </td> -->
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Fried Rice</td>
+                <td>250.0</td>
+                <td><span class="tag tag-primary">Not Available</span></td>
+                
+                <!-- <td>
+                  <button class="btn btn-sm btn-info">
+                    <i id="myicon1"class="fa fa-search"></i></button>
+                    </td>
+                    <td> <button class="btn btn-sm btn-warning">
+                      <i id="myicon2"class="fa fa-edit"></i></button>
+                  </td>
+                    <td><button class="btn btn-sm btn-danger">
+                      <i id="myicon3" class="fa fa-remove"></i></button>
+                  </td> -->
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Veg Manchurian</td>
+                <td>300.0</td>
+                <td><span class="tag tag-danger">Available</span></td>
+                
+                <!-- <td>
+                  <button class="btn btn-sm btn-info">
+                    <i id="myicon1"class="fa fa-search"></i></button>
+                    </td>
+                    <td> <button class="btn btn-sm btn-warning">
+                      <i id="myicon2"class="fa fa-edit"></i></button>
+                  </td>
+                    <td><button class="btn btn-sm btn-danger">
+                      <i id="myicon3" class="fa fa-remove"></i></button>
+                  </td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </div>
+  </div>
+  <!-- /.row -->
+
+<!-- </div> -->
+<script>
+  function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+  </script>
